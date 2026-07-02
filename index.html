@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança na Internet para a Melhor Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Navegar Seguro 🌟</h1>
+        <p>Aprenda a usar a internet com segurança e tranquilidade.</p>
+        <button id="btn-aumento-fonte" onclick="aumentarFonte()">Aumentar Letra (+)</button>
+    </header>
+
+    <main class="container">
+        
+        <section class="dica-card">
+            <h2>1. Cuidado com Links Suspeitos 🛑</h2>
+            <p>Não clique em links enviados por desconhecidos no WhatsApp ou SMS. Bancos e lojas não pedem seus dados ou senhas por mensagem.</p>
+            <button class="btn-saber-mais" onclick="mostrarAlerta('Dica 1', 'Se receber uma mensagem de urgência dizendo que sua conta foi bloqueada, ligue direto para o seu banco. Nunca clique no link da mensagem!')">Ver exemplo prático</button>
+        </section>
+
+        <section class="dica-card">
+            <h2>2. Crie Senhas Fortes 🔑</h2>
+            <p>Evite usar sua data de nascimento ou sequências como "123456". Misture letras maiúsculas, minúsculas e números.</p>
+            <button class="btn-saber-mais" onclick="mostrarAlerta('Dica 2', 'Uma senha boa mistura coisas que você lembra, mas outros não adivinham. Exemplo: CafeComBolo2026!')">Ver exemplo prático</button>
+        </section>
+
+        <section class="dica-card">
+            <h2>3. O Cadeado de Segurança 🔒</h2>
+            <p>Sempre olhe o topo do site antes de colocar seus dados. Procure pelo desenho de um cadeado fechado ao lado do endereço do site.</p>
+            <button class="btn-saber-mais" onclick="mostrarAlerta('Dica 3', 'O cadeado significa que a sua conexão com aquele site é protegida. Se o navegador disser \'Não seguro\', saia da página!')">Ver exemplo prático</button>
+        </section>
+
+        <div id="caixa-alerta" class="escondido">
+            <h3 id="alerta-titulo"></h3>
+            <p id="alerta-texto"></p>
+            <button onclick="fecharAlerta()">Entendi!</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Compartilhe esse site com seus amigos e familiares! Proteção nunca é demais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
