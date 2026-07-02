@@ -1,1 +1,27 @@
+// Função para aumentar o tamanho do texto do site
+let tamanhoAtual = 18;
 
+function aumentarFonte() {
+    if (tamanhoAtual < 26) { // Limite máximo para não quebrar o layout
+        tamanhoAtual += 2;
+        document.body.style.fontSize = tamanhoAtual + "px";
+    } else {
+        // Se já estiver no máximo, volta ao tamanho padrão
+        tamanhoAtual = 18;
+        document.body.style.fontSize = tamanhoAtual + "px";
+    }
+}
+
+// Funções para controlar a caixinha de explicações práticas
+function mostrarAlerta(titulo, texto) {
+    const caixa = document.getElementById("caixa-alerta");
+    document.getElementById("alerta-titulo").innerText = titulo;
+    document.getElementById("alerta-texto").innerText = texto;
+    
+    caixa.classList.remove("escondido");
+}
+
+function fecharAlerta() {
+    const caixa = document.getElementById("caixa-alerta");
+    caixa.classList.add("escondido");
+}
